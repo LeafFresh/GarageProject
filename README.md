@@ -1,2 +1,3 @@
 # GarageProject
-School project, William and Daniel
+School project, William, Daniel en Reinier
+
