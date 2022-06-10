@@ -41,8 +41,6 @@
 
     }
     .buttonplace {
-        // padding: 15px 25px;
-        // text-align: center;
         background-color: #49487d;
         border-color: #1b1d31;
         border-radius: 15px;
@@ -54,6 +52,8 @@
         outline: none;
         position: absolute;
         right: 10%;
+        text-align: center;
+        text-decoration: none;
         top: 80%;
         width: 100px;
     }
@@ -71,76 +71,79 @@
 
 // APPOINTMENT PAGE CSS 
 
-.calendar2 {
-    height: 61%;
-    left: 8%;
-    position: absolute;
-    top: 25%;
-    width: 35%;
-    background-color: #49487d;
-    border-radius: 3%;
-    text-align: center;
-
-    .calendarText {
-        position: relative;
-        top: 35%;
-    }
-
-}
-.itemA {
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    width: 20%;
-    height: 30%;
-
-    .itemText {
-        position: relative;
-        top: 20%;
-
-    }
-}
-.submitAfspraak {
-    width: 15%;
-    height: 15%;
-    background-color: #49487d; 
-    border-color: #16111e;
-    border-radius: 15px;
-    border: none;
-    box-shadow: 0 9px #1b152e; 
-    color: #deddde;
-    cursor: pointer;
-    outline: none;
-    position: absolute;
-    right: 10%;
-    top: 80%;
-    font-size: 25px;
-}
-.submitAfspraak:hover {
-    background-color: #2d234e;
-    box-shadow: 0 9px #16111e; 
-}
-.submitAfspraak:active {
-    border-color: #16111e;
-    box-shadow: 0 5px #2d234e;
-    transform: translateY(4px);
-}
-
-// STATUS PAGE CSS
-    .wheel {
-        position: absolute;
-        top: 10%;
-        left: 0;
-
-    }
-    .calendar {
+    .calendar2 {
+        background-color: #49487d;
+        border-color: #16111e;
+        border-radius: 3%;
+        border-style: groove;
+        border-width: 3px;
         height: 61%;
         left: 8%;
         position: absolute;
+        text-align: center;
         top: 25%;
         width: 35%;
+        
+        .calendarText {
+            position: relative;
+            top: 35%;
+        }
+
+    }
+    .itemA {
+        height: 30%;
+        position: absolute;
+        right: 10%;
+        top: 50%;
+        width: 20%;
+
+        .itemText {
+            position: relative;
+            top: 20%;
+
+        }
+    }
+    .submitAfspraak {
+        background-color: #49487d; 
+        border-color: #16111e;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0 9px #1b152e; 
+        color: #deddde;
+        cursor: pointer;
+        font-size: 25px;
+        height: 15%;
+        outline: none;
+        position: absolute;
+        right: 10%;
+        top: 80%;
+        width: 15%;
+    }
+    .submitAfspraak:hover {
+        background-color: #2d234e;
+        box-shadow: 0 9px #16111e; 
+    }
+    .submitAfspraak:active {
+        border-color: #16111e;
+        box-shadow: 0 5px #2d234e;
+        transform: translateY(4px);
+    }
+
+// STATUS PAGE CSS
+    .wheel {
+        left: 0;
+        position: absolute;
+        top: 10%;
+
+    }
+    .calendar {
         border-radius: 100%;
+        height: 61%;
+        left: 8%;
+        position: absolute;
         text-align: center;
+        top: 25%;
+        width: 35%;
 
         .calendarText {
             position: relative;
@@ -181,55 +184,55 @@
         width: 40%;
     }
     .status {
-        left: 70%;
-        position: absolute;
-        top: 50%;
         background-color:#49487d;
-        color:#fff;
-        border:solid 1px #291f4b;
-        text-align:center;
-        padding:10px;
         border-radius:10px;
+        border:solid 1px #291f4b;
         box-shadow: 2px 2px 2px #1b152ed7;
+        color:#fff;
+        left: 70%;
+        padding:10px;
+        position: absolute;
+        text-align:center;
+        top: 50%;
     }
 
     .status .statusText::after {
-        content: " ";
-        position: absolute;
+        border-color: transparent transparent #1b1d31 transparent;
+        border-style: solid;
+        border-width: 5px;
         bottom: 100%;
+        content: " ";
         left: 50%;
         margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: transparent transparent #1b1d31 transparent;
+        position: absolute;
     }
 
 // PROFILE PAGE
 
-.pfp {
-    position: absolute;
-    top: 15%;
-    left: 10%;
+    .pfp {
+        position: absolute;
+        top: 15%;
+        left: 10%;
 
-    .pfptext {
-        text-align: center;
+        .pfptext {
+            text-align: center;
+        }
     }
-}
-.profileform {
-    position: absolute;
-    top: 40%;
-    left: 35%;
+    .profileform {
+        position: absolute;
+        top: 40%;
+        left: 35%;
 
-    .firsthalf {
-        float: left;
-        padding-right: 100px;
+        .firsthalf {
+            float: left;
+            padding-right: 100px;
+        }
+        .secondhalf {
+            float: right;
+            
+        }
+        label {
+            padding-top: 30px;
+        }
     }
-    .secondhalf {
-        float: right;
-        
-    }
-    label {
-        padding-top: 30px;
-    }
-}
 }

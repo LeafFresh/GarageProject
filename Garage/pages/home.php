@@ -8,7 +8,7 @@
         
         <div class="headtext">
             
-            <h1>Laat je autu bij ons repareren!!</h1>
+            <h1>Laat je auto bij ons repareren!!</h1>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br> 
@@ -18,4 +18,4 @@
                     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br> 
                 </p>
         </div>
-    <button class="buttonplace">Maak een afspraak</button>
+    <a class="buttonplace" href="?action=4">Maak een afspraak</a>

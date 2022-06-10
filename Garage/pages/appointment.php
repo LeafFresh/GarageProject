@@ -4,7 +4,7 @@
 ?>
 
 <img src="images/GTAcustoms.webp" class="LosSantoStatus">
-
+<form action="" method="post" enctype="multipart/form-data">
 <div class="calendar2">
     
     <div class="calendarText">
@@ -27,4 +27,9 @@
     </select>
     <p class="itemText"> Text type voor uitleg afspraak type</p>
 </div>
-<button class="submitAfspraak"> Maak Afspraak</button>
+<button class="submitAfspraak" name="submit">Maak Afspraak</button>
+</form>
+
+<?php
+makeAppointment();
+?>

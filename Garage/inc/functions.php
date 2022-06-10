@@ -18,7 +18,22 @@ function getDbConnection() {
 }
 
 
+function makeAppointment() {
 
+    $dbh = getDbConnection(); 
+    if (isset($_POST['submit'])) {  
+        
+        $begindate = date("Y/m/d");
+        $user = "naam"; //$_SESSION['id']
+        $idcar = 123456;
+
+        $appointment = "  INSERT INTO afspraak(begindatum, einddatum, naam, aantal_uren, idmonteur, idvoertuig)
+                    VALUES('$begindate', '$begindate','$user', '4', '1','$idcar')";
+        $dbh->exec($appointment);
+
+        echo "<meta http-equiv='refresh' content='0'>";
+    }
+}
 
 
 
