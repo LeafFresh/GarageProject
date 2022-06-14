@@ -1,0 +1,21 @@
+.bodycontainer, html, head{
+    background-color: #000; 
+    background: #000;
+}
+
+h3, p, a, div{
+    color: #bcbcbc
+}
+
+div.registreerbutton{
+    color: red !important;
+    background-color: red !important;
+}
+
+div.inlogbutton{
+    color: red;
+}
+
+div.aangemeld{
+    color: green;
+}
